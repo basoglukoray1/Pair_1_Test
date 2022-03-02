@@ -15,7 +15,6 @@ import java.util.concurrent.TimeUnit;
 
 public class US13_TestCase1 {
 
-    public class CY7_US13 {
         WebDriver driver;
 
         @BeforeMethod
@@ -46,7 +45,7 @@ public class US13_TestCase1 {
             driver.switchTo().frame(driver.findElement(By.xpath("(//iframe)[1]")));
             //enter some content
             WebElement content= driver.findElement(By.xpath("//body[@contenteditable='true']"));
-            content.sendKeys("Hello B25 Test 24");
+            content.sendKeys("Hello B25 Test 25");
             //changing focus to parent frame
             driver.switchTo().parentFrame();
             //click send button
@@ -57,4 +56,3 @@ public class US13_TestCase1 {
             System.out.println("isDisplayed.isDisplayed() = " + isDisplayed.isDisplayed());
         }
     }
-}
