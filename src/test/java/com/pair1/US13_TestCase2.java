@@ -1,5 +1,5 @@
 package com.pair1;
 
-public class US1_TestCase2 {
+public class US13_TestCase2 {
     //test
 }
